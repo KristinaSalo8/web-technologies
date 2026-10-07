@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Анкета</title>
+</head>
+<body>
+  <div align = "center">
+    <h1>Анкета</h1>
+    <form action="questionnaire.html" method="get" enctype="multipart/form-data">
+      <fieldset align = "center">
+        <legend>Хто ви</legend>
+        <br>
+          <label for="fullname">ПІБ:</label><br>
+          <input type="text" id="fullname" name="fullname" placeholder="Сергій Сергійович Сергієв" required tabindex="1">
+        <br>
+        <br>
+          <label for="birth">Дата народження:</label><br>
+          <input type="date" id="birth" name="birth" required tabindex="2">
+        <br>
+        <br>
+          <label for="city">Місто:</label><br>
+          <input type="text" id="city" name="city" list="cities-list" placeholder="Оберіть місто з переліку" tabindex="3">
+          <datalist id="cities-list">
+            <option value="Київ"></option>
+            <option value="Львів"></option>
+            <option value="Одеса"></option>
+            <option value="Харків"></option>
+            <option value="Дніпро"></option>
+            <option value="Чернівці"></option>
+          </datalist>
+        <br>
+      </fieldset>
+      <fieldset align = "center">
+        <legend>Контактні дані</legend>
+        <br>
+          <label for="email">Електронна пошта:</label><br>
+          <input type="email" id="email" name="email" placeholder="example@mail.com" autocomplete="off" pattern="[A-Za-z0-9_]+" required tabindex="4">
+        <br>
+        <br>
+          <label for="phone">Номер телефону:</label><br>
+          <input type="tel" id="phone" name="phone" placeholder="+380123456789" pattern="\+380\d{9}" title="Формат: +380501234567" required tabindex="5">
+        <br>
+        <br>
+          <label for="password">Пароль:</label><br>
+          <input type="password" id="password" name="password" placeholder="Пароль" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{6}$" required tabindex="6" title="Неправильний пароль">
+        <br>
+      </fieldset>
+      <fieldset align = "center">
+        <legend>Опитування</legend>
+        <p>На якому ви курсі?</p>
+          <input type="radio" id="exp-first" name="experience" value="first" tabindex="7">
+          <label for="exp-first">Перший</label><br>
+          <input type="radio" id="exp-second" name="experience" value="second" tabindex="8">
+          <label for="exp-second">Другий</label><br>
+          <input type="radio" id="exp-third" name="experience" value="third" tabindex="9">
+          <label for="exp-third">Третій</label>
+        <br>
+        <p>На якому форматі хочете навчатися?</p>
+          <input type="radio" id="fmt-offline" name="format" value="offline" tabindex="10">
+          <label for="fmt-offline">Очний</label><br>
+          <input type="radio" id="fmt-online" name="format" value="online" checked tabindex="11">
+          <label for="fmt-online">Онлайн</label><br>
+          <input type="radio" id="fmt-hybrid" name="format" value="hybrid" tabindex="12">
+          <label for="fmt-hybrid">Змішаний</label>
+        <br>
+        <p>Які напрямки IT вас цікавлять?</p>
+          <input type="checkbox" id="int-web" name="interests" value="web" tabindex="13">
+          <label for="int-web">Web-розробка</label><br>
+          <input type="checkbox" id="int-mobile" name="interests" value="mobile" tabindex="14">
+          <label for="int-mobile">Мобільна розробка</label><br>
+          <input type="checkbox" id="int-qa" name="interests" value="qa" tabindex="15">
+          <label for="int-qa">Тестування (QA)</label><br>
+          <input type="checkbox" id="int-design" name="interests" value="design" tabindex="16">
+          <label for="int-design">UI/UX Design</label>
+        <br>
+      </fieldset>
+      <fieldset align = "center">
+        <legend>Параметри</legend>
+        <br>
+          <label for="education">Рівень освіти:</label><br>
+          <select id="education" name="education" tabindex="17">
+            <option value="school">Загальна середня</option>
+            <option value="college">Професійно-технічна</option>
+            <option value="bachelor" selected>Бакалавр</option>
+            <option value="master">Магістр</option>
+            <option value="phd">Науковий ступінь</option>
+          </select>
+        <br>
+          <label for="languages">Мови, якими ви володієте:</label><br>
+          <select id="languages" name="languages" multiple size="6" tabindex="18">
+            <option value="ua">Українська</option>
+            <option value="en">Англійська</option>
+            <option value="de">Німецька</option>
+            <option value="fr">Французька</option>
+            <option value="es">Іспанська</option>
+            <option value="it">Італійська</option>
+          </select>
+        <br>
+        <br>
+          <label for="course">Оберіть курс для вступу:</label><br>
+          <select id="course" name="course" tabindex="19">
+            <optgroup label="Програмування">
+              <option value="prog-python">Python Pro</option>
+              <option value="prog-js">JavaScript Fullstack</option>
+              <option value="prog-cpp">C++ Fundamentals</option>
+            </optgroup>
+            <optgroup label="Дизайн">
+              <option value="des-figma">Figma UI/UX</option>
+              <option value="des-graphic">Графічний дизайн</option>
+              <option value="des-3d">3D-моделювання</option>
+            </optgroup>
+            <optgroup label="Адміністрування">
+              <option value="admin-linux">Linux System Admin</option>
+              <option value="admin-networks">Комп'ютерні мережі</option>
+              <option value="admin-devops">DevOps Essentials</option>
+            </optgroup>
+            <optgroup label="Маркетинг">
+              <option value="mkt-smm">SMM-менеджмент</option>
+              <option value="mkt-seo">SEO-оптимізація</option>
+              <option value="mkt-content">Контент-маркетинг</option>
+            </optgroup>
+          </select>
+        <br>
+      </fieldset>
+      <fieldset align = "center">
+        <legend>Файли та додаткові дані</legend>
+        <br>
+          <label for="audio-files">Завантажте ваші аудіоповідомлення або записи:</label><br>
+          <input type="file" id="audio-files" name="audio_files" accept="audio/*" multiple tabindex="20">
+        <br>
+        <br>
+          <label for="about">Розповісти про себе:</label><br>
+          <textarea id="about" name="about_user" rows="4" maxlength="500" placeholder="Коротко опишіть свої цілі та мотивацію..." tabindex="21"></textarea>
+        <br>
+      </fieldset>
+      <br>
+        <button type="submit" name="btn_submit" value="send" tabindex="22">Надіслати анкету</button>
+        <button type="reset" name="btn_reset" value="clear" tabindex="23">Очистити форму</button>
+      <br>
+    </form>
+    <a href="file:///C:/Users/Lenovo/Desktop/web-technologies/lab-03/index.html"
+          title="file:///C:/Users/Lenovo/Desktop/web-technologies/lab-03/index.html"
+          target="_blank">Повернутись на головну</a>
+  </div>
+</body>
+</html>
