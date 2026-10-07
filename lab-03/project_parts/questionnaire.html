@@ -7,16 +7,20 @@
 <body>
   <div align = "center">
     <h1>Анкета</h1>
-    <form action="questionnaire.html" method="get" enctype="multipart/form-data">
+    <form action="questionnaire.html" method="get">
       <fieldset align = "center">
         <legend>Хто ви</legend>
         <br>
+        <div>
           <label for="fullname">ПІБ:</label><br>
           <input type="text" id="fullname" name="fullname" placeholder="Сергій Сергійович Сергієв" required tabindex="1">
+        </div>
         <br>
         <br>
+        <div>
           <label for="birth">Дата народження:</label><br>
           <input type="date" id="birth" name="birth" required tabindex="2">
+        </div>
         <br>
         <br>
           <label for="city">Місто:</label><br>
@@ -43,7 +47,7 @@
         <br>
         <br>
           <label for="password">Пароль:</label><br>
-          <input type="password" id="password" name="password" placeholder="Пароль" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{6}$" required tabindex="6" title="Неправильний пароль">
+          <input type="password" id="password" name="password" placeholder="Пароль" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{6}$" required tabindex="6">
         <br>
       </fieldset>
       <fieldset align = "center">
@@ -123,6 +127,8 @@
           </select>
         <br>
       </fieldset>
+    </form>
+    <form action="questionnaire.html" method="post" enctype="multipart/form-data"></form>
       <fieldset align = "center">
         <legend>Файли та додаткові дані</legend>
         <br>
@@ -139,9 +145,10 @@
         <button type="reset" name="btn_reset" value="clear" tabindex="23">Очистити форму</button>
       <br>
     </form>
-    <a href="file:///C:/Users/Lenovo/Desktop/web-technologies/lab-03/index.html"
-          title="file:///C:/Users/Lenovo/Desktop/web-technologies/lab-03/index.html"
+    <a href="/index.html"
+          title="Повернутись на головну"
           target="_blank">Повернутись на головну</a>
+
   </div>
 </body>
 </html>
