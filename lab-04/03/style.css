@@ -1,0 +1,21 @@
+a{
+    color: blueviolet;
+}
+.main_list{
+    color: green;
+}
+.end_vc_list{
+    list-style: square;
+}
+.midl_vc_list{
+    list-style-image: url(icon.png);
+}
+.ster_vc_list{
+    list-style: none;
+}
+.end_vc_list a {
+    text-decoration: none;
+}
+ol{
+    list-style-position: inside;
+}
