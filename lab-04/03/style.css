@@ -10,7 +10,7 @@ a{
 .midl_vc_list{
     list-style-image: url(icon.png);
 }
-.ster_vc_list{
+ul li ul{
     list-style: none;
 }
 .end_vc_list a {

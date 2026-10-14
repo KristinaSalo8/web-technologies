@@ -1,26 +1,32 @@
-/* Загальні стилі сторінки */
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     background-color: white;
-
 }
-.main-title {
+hr{
+    align-items: center;
+    width: 60%;
+    background-color: green;
+    height: 7px;
+}
+h1 {
     color: red;
     font-size: 32px;
     font-weight: bold;
     text-align: center;
 }
-
-.sub-title {
+h2{
     font-style: italic;
     font-size: 22px;
     font-weight: bold;
     text-align: center;
 }
-.list{
+.osnov-div{
+    line-height: 45px;
     text-align: center;
-    line-height: 10px;
+}
+.list{
+    line-height: 5px;
    
 }
 .line-through {
@@ -31,7 +37,7 @@ body {
     text-decoration: underline;
 }
 
-.highlight {
+#highlight {
     background-color: #ffff00; 
 }
 .divider {
