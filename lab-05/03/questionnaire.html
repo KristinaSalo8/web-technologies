@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Завдання 3 лаби 5а</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <h1 class="title">Анкета</h1>
+    <form class="form" action="questionnaire.html" method="get">
+      <fieldset class="group">
+        <legend class="group-title">Хто ви</legend>
+        <div class="field">
+          <label for="fullname">ПІБ:</label>
+          <input class="input" type="text" id="fullname" name="fullname" placeholder="Сергій Сергійович Сергієв" required tabindex="1">
+        </div>
+        <div class="field">
+          <label for="birth">Дата народження:</label>
+          <input class="input" type="date" id="birth" name="birth" required tabindex="2">
+        </div>
+        <div class="field">
+          <label for="city">Місто:</label>
+          <input class="input" type="text" id="city" name="city" list="cities-list" placeholder="Оберіть місто з переліку" tabindex="3">
+          <datalist id="cities-list">
+            <option value="Київ"></option>
+            <option value="Львів"></option>
+            <option value="Одеса"></option>
+            <option value="Харків"></option>
+            <option value="Дніпро"></option>
+            <option value="Чернівці"></option>
+          </datalist>
+        </div>
+      </fieldset>
+      <fieldset class="group">
+        <legend class="group-title">Контактні дані</legend>
+        <div class="field">
+          <label for="email">Електронна пошта:</label>
+          <input class="input" type="email" id="email" name="email" placeholder="example@mail.com" autocomplete="off" pattern="[A-Za-z0-9_]+" required tabindex="4">
+        </div>
+        <div class="field">
+          <label for="phone">Номер телефону:</label>
+          <input class="input" type="tel" id="phone" name="phone" placeholder="+380123456789" pattern="\+380\d{9}" title="Формат: +380501234567" required tabindex="5">
+        </div>
+        <div class="field">
+          <label for="password">Пароль:</label>
+          <input class="input" type="password" id="password" name="password" placeholder="Пароль" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{6}$" required tabindex="6">
+        </div>
+      </fieldset>
+      <fieldset class="group">
+        <legend class="group-title">Опитування</legend>
+        <p class="question">На якому ви курсі?</p>
+        <div class="options">
+          <div class="option">
+            <input type="radio" id="exp-first" name="experience" value="first" tabindex="7">
+            <label for="exp-first">Перший</label>
+          </div>
+          <div class="option">
+            <input type="radio" id="exp-second" name="experience" value="second" tabindex="8">
+            <label for="exp-second">Другий</label>
+          </div>
+          <div class="option">
+            <input type="radio" id="exp-third" name="experience" value="third" tabindex="9">
+            <label for="exp-third">Третій</label>
+          </div>
+        </div>
+        <p class="question">На якому форматі хочете навчатися?</p>
+        <div class="options">
+          <div class="option">
+            <input type="radio" id="fmt-offline" name="format" value="offline" tabindex="10">
+            <label for="fmt-offline">Очний</label>
+          </div>
+          <div class="option">
+            <input type="radio" id="fmt-online" name="format" value="online" checked tabindex="11">
+            <label for="fmt-online">Онлайн</label>
+          </div>
+          <div class="option">
+            <input type="radio" id="fmt-hybrid" name="format" value="hybrid" tabindex="12">
+            <label for="fmt-hybrid">Змішаний</label>
+          </div>
+        </div>
+        <p class="question">Які напрямки IT вас цікавлять?</p>
+        <div class="options">
+          <div class="option">
+            <input type="checkbox" id="int-web" name="interests" value="web" tabindex="13">
+            <label for="int-web">Web-розробка</label>
+          </div>
+          <div class="option">
+            <input type="checkbox" id="int-mobile" name="interests" value="mobile" tabindex="14">
+            <label for="int-mobile">Мобільна розробка</label>
+          </div>
+          <div class="option">
+            <input type="checkbox" id="int-qa" name="interests" value="qa" tabindex="15">
+            <label for="int-qa">Тестування (QA)</label>
+          </div>
+          <div class="option">
+            <input type="checkbox" id="int-design" name="interests" value="design" tabindex="16">
+            <label for="int-design">UI/UX Design</label>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class="group">
+        <legend class="group-title">Параметри</legend>
+        <div class="field">
+          <label for="education">Рівень освіти:</label>
+          <select class="input" id="education" name="education" tabindex="17">
+            <option value="school">Загальна середня</option>
+            <option value="college">Професійно-технічна</option>
+            <option value="bachelor" selected>Бакалавр</option>
+            <option value="master">Магістр</option>
+            <option value="phd">Науковий ступінь</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="languages">Мови, якими ви володієте:</label>
+          <select class="input" id="languages" name="languages" multiple size="6" tabindex="18">
+            <option value="ua">Українська</option>
+            <option value="en">Англійська</option>
+            <option value="de">Німецька</option>
+            <option value="fr">Французька</option>
+            <option value="es">Іспанська</option>
+            <option value="it">Італійська</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="course">Оберіть курс для вступу:</label>
+          <select class="input" id="course" name="course" tabindex="19">
+            <optgroup label="Програмування">
+              <option value="prog-python">Python Pro</option>
+              <option value="prog-js">JavaScript Fullstack</option>
+              <option value="prog-cpp">C++ Fundamentals</option>
+            </optgroup>
+            <optgroup label="Дизайн">
+              <option value="des-figma">Figma UI/UX</option>
+              <option value="des-graphic">Графічний дизайн</option>
+              <option value="des-3d">3D-моделювання</option>
+            </optgroup>
+            <optgroup label="Адміністрування">
+              <option value="admin-linux">Linux System Admin</option>
+              <option value="admin-networks">Комп'ютерні мережі</option>
+              <option value="admin-devops">DevOps Essentials</option>
+            </optgroup>
+            <optgroup label="Маркетинг">
+              <option value="mkt-smm">SMM-менеджмент</option>
+              <option value="mkt-seo">SEO-оптимізація</option>
+              <option value="mkt-content">Контент-маркетинг</option>
+            </optgroup>
+          </select>
+        </div>
+      </fieldset>
+    </form>
+    <form class="form" action="questionnaire.html" method="post" enctype="multipart/form-data">
+      <fieldset class="group">
+        <legend class="group-title">Файли та додаткові дані</legend>
+        <div class="field">
+          <label for="audio-files">Завантажте ваші аудіоповідомлення або записи:</label>
+          <input class="input" type="file" id="audio-files" name="audio_files" accept="audio/*" multiple tabindex="20">
+        </div>
+        <div class="field">
+          <label for="about">Розповісти про себе:</label>
+          <textarea class="input" id="about" name="about_user" rows="4" maxlength="500" placeholder="Коротко опишіть свої цілі та мотивацію..." tabindex="21"></textarea>
+        </div>
+      </fieldset>
+      <div class="actions">
+        <button class="btn btn-submit" type="submit" name="btn_submit" value="send" tabindex="22">Надіслати анкету</button>
+        <button class="btn btn-reset" type="reset" name="btn_reset" value="clear" tabindex="23">Очистити форму</button>
+      </div>
+    </form>
+    <a class="home-link" href="/index.html" title="Повернутись на головну" target="_blank">Повернутись на головну</a>
+  </div>
+</body>
+</html>

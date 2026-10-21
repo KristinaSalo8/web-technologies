@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: rgb(250, 247, 252);
+    color: rgb(40, 30, 50);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+h2 {
+    margin: 20px;
+}
+#box-sizing div {
+    display: inline-block;
+    vertical-align: top;
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    border: 5px solid rgb(106, 27, 154);
+    background-color: rgb(216, 191, 232);
+}
+
+#box-sizing div:nth-of-type(1) {
+    box-sizing: content-box;
+}
+
+#box-sizing div:nth-of-type(2) {
+    box-sizing: border-box;
+}
+#overflow {
+    padding-bottom: 150px;
+}
+
+#overflow div {
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    width: 250px;
+    max-height: 80px;
+    margin: 20px;
+    border: 2px solid rgb(106, 27, 154);
+    background-color: rgb(240, 230, 247);
+}
+
+#overflow div:nth-of-type(1) {
+    overflow: visible; 
+}
+
+#overflow div:nth-of-type(2) {
+    overflow: hidden;
+}
+
+#overflow div:nth-of-type(3) {
+    overflow: scroll;
+}
+
+#overflow div:nth-of-type(4) {
+    overflow: auto;  
+}
+.link ul {
+    margin: 20px;
+    padding: 0;
+    list-style: none;   
+}
+.link li {
+    display: inline-block;
+}
+.link a {
+    display: block;
+    padding: 10px 20px;
+    background-color: rgb(106, 27, 154);
+    color: white;
+    text-decoration: none;
+}
+.link a:hover {
+    background-color: rgb(150, 80, 190);
+}
+
+/* Приховуємо третій пункт меню («Послуги»).
+   display: none повністю прибирає елемент із відображення і з потоку документа:
+   він не займає місця (сусідні пункти зсуваються), не реагує на мишу та клавіатуру
+   і не читається екранними зчитувачами.
+   Інші способи приховування поводяться інакше:
+   - visibility: hidden – елемент невидимий, але місце під нього залишається;
+   - opacity: 0 – елемент прозорий, але займає місце й далі натискається;
+   - position: absolute з великим зміщенням – елемент лише виноситься за екран. */
+.link li:nth-of-type(3) {
+    display: none;
+}

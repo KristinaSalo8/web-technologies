@@ -21,11 +21,11 @@ h2{
     font-weight: bold;
     text-align: center;
 }
-.osnov-div{
+.recipe{
     line-height: 45px;
     text-align: center;
 }
-.list{
+.recipe-list{
     line-height: 5px;
    
 }
@@ -45,7 +45,7 @@ h2{
     background-color: #008000;
     width: 100%;
 }
-.footer-text {
+.recipe-footer {
     font-style: italic;
     font-size: 16px;
     line-height: 1.5;

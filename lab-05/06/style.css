@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 20px 0;
+    background-color: #1b2a41;
+    background-image: url('/06/image/photo1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #321849;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.container {
+    box-sizing: border-box;
+    max-width: 900px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+h1,h2 {
+    margin: 0 0 10px;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+.card p {
+    margin: 4px 0;
+}
+.label {
+    display: inline-block;
+    padding: 2px 8px;
+    background-color: rgba(255, 255, 255, 0.9);
+    font-weight: 700;
+}
+.tag-language {
+    display: inline;
+    width: 200px;
+    height: 100px;
+    padding: 4px 10px;
+    background-color: #fcd0ff;
+    border: 1px solid #9b16aa;
+}
+.tag-skills {
+    margin-top: 15px;
+}
+
+.tag-skill {
+    display: block;
+    width: 150px;
+    margin-bottom: 6px;
+    padding: 4px 10px;
+    background-color: #f6a7ff;
+    border: 1px solid #9c24a7;
+}
+.repeat-box {
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    width: 250px;
+    height: 200px;
+    margin: 0 10px 10px 0;
+    border: 1px solid #8917b9;
+    background-color: #fff;
+    background-image: url('/06/image/casino.png');
+}
+.repeat-x {
+    background-repeat: repeat-x;
+}
+.repeat-y {
+    background-repeat: repeat-y;
+}
+.repeat-space {
+    background-repeat: space;
+}
+.repeat-round {
+    background-repeat: round;
+}
+/*space – фонове зображення повторюється стільки разів, щоб повністю заповнити область; якщо це не вдається, між картинками додається порожній простір*/
+/* round – фонове зображення повторюється так, щоб в області помістилося ціле число рисунків; якщо це не вдається зробити, фонові рисунки масштабуються (обрізуються, стискаються тощо).*/
+.size-box {
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    width: 300px;
+    height: 200px;
+    margin: 0 10px 10px 0;
+    border: 2px solid #264653;
+    background-color: #e9ecef;
+    background-image: url('/06/image/photo1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.size-contain {
+    background-size: contain;
+}
+
+.size-cover {
+    background-size: cover;
+}
+.scroll-box {
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    width: 300px;
+    max-height: 150px;
+    margin: 0 10px 10px 0;
+    padding: 10px;
+    overflow: auto;
+    border: 1px solid #264653;
+    background-color: #fff;
+    background-image: url("img/icon.svg");
+}
+
+.attach-scroll {
+    background-attachment: scroll;
+}
+
+.attach-local {
+    background-attachment: local;
+}

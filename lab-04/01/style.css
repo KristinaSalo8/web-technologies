@@ -11,30 +11,30 @@ div{
     text-align: justify;
 }
 
-.red_paragraph{
+.text-colored{
     color: red;
 }
 
-.nowrap{
+.text-nowrap{
     white-space: nowrap;
 }
 
-#spec_pa{
+#paragraph{
     font-style: italic;
     font-weight: bold;
 }
 
-.text_shadow{
+.text-shadow{
     text-shadow: 5px -5px 3px purple;
 }
 
-.block1{
+.text-linethrough{
     text-decoration: line-through;
     text-transform: uppercase;
     text-indent: 50px;
 }
 
-.block2{
+.text-spacing{
     letter-spacing: 30px;
     word-spacing: 50px;
 }
