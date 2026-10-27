@@ -115,14 +115,16 @@ h2 {
     padding: 10px;
     overflow: auto;
     border: 1px solid #264653;
-    background-color: #fff;
+    background-color: #ffb9fb;
     background-image: url("img/icon.svg");
 }
 
 .attach-scroll {
     background-attachment: scroll;
+    background-image: url('/06/image/casino.png');
 }
 
 .attach-local {
     background-attachment: local;
+    background-image: url('/06/image/casino.png');
 }

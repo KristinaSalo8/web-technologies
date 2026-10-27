@@ -9,7 +9,7 @@ body {
     color: rgb(33, 43, 54);
     font-family: "Segoe UI", Roboto, Arial, sans-serif;
     font-size: 16px;
-    line-height: 1.5;
+
 }
 
 .page {
@@ -45,7 +45,6 @@ body {
     color: rgb(255, 255, 255);
     font-size: 17px;
     font-weight: 700;
-    letter-spacing: 1px;
     text-transform: uppercase;
 }
 
@@ -71,19 +70,9 @@ body {
     text-align: left;
 }
 
-input.input,select.input {
+input.input, select.input {
     height: 38px;
 }
-
-.input:focus {
-    background-color: rgb(255, 249, 214);
-}
-
-.input::placeholder {
-    color: rgb(130, 145, 155);
-    font-style: italic;
-}
-
 #languages {
     height: auto;
     padding: 4px;
@@ -94,7 +83,6 @@ input.input,select.input {
     height: 110px;
     overflow: auto;
     resize: vertical;
-    line-height: 1.4;
 }
 
 #audio-files {
@@ -122,10 +110,6 @@ input.input,select.input {
     padding: 3px 8px;
 }
 
-.option:hover {
-    background-color: rgb(225, 239, 244);
-}
-
 .option label {
     font-size: 15px;
     font-weight: 400;
@@ -147,7 +131,6 @@ input.input,select.input {
     font-family: inherit;
     font-size: 15px;
     font-weight: 700;
-    letter-spacing: 1px;
     text-transform: uppercase;
 }
 
@@ -158,10 +141,6 @@ input.input,select.input {
 .btn-reset {
     background-color: rgb(120, 130, 140);
 }
-
-.btn:hover {
-    background-color: rgb(18, 98, 116);
-}
 .home-link {
     display: inline-block;
     padding: 6px 12px;
@@ -169,9 +148,4 @@ input.input,select.input {
     font-size: 16px;
     font-weight: 600;
     text-decoration: none;
-}
-
-.home-link:hover {
-    background-color: rgb(255, 249, 214);
-    text-decoration: underline;
 }

@@ -7,11 +7,10 @@ body {
     font-size: 16px;
     line-height: 1.5;
 }
-
 h2 {
     margin: 20px;
 }
-#box-sizing div {
+.box-sizing-section div {
     display: inline-block;
     vertical-align: top;
     width: 300px;
@@ -20,19 +19,16 @@ h2 {
     border: 5px solid rgb(106, 27, 154);
     background-color: rgb(216, 191, 232);
 }
-
-#box-sizing div:nth-of-type(1) {
+.box-sizing-section div:nth-of-type(1) {
     box-sizing: content-box;
 }
-
-#box-sizing div:nth-of-type(2) {
+.box-sizing-section div:nth-of-type(2) {
     box-sizing: border-box;
 }
-#overflow {
+.overflow-section {
     padding-bottom: 150px;
 }
-
-#overflow div {
+.overflow-section div {
     display: inline-block;
     vertical-align: top;
     box-sizing: border-box;
@@ -43,48 +39,41 @@ h2 {
     background-color: rgb(240, 230, 247);
 }
 
-#overflow div:nth-of-type(1) {
-    overflow: visible; 
+.overflow-section div:nth-of-type(1) {
+    overflow: visible;
 }
 
-#overflow div:nth-of-type(2) {
-    overflow: hidden;
+.overflow-section div:nth-of-type(2) {
+    overflow: hidden;   
 }
 
-#overflow div:nth-of-type(3) {
-    overflow: scroll;
+.overflow-section div:nth-of-type(3) {
+    overflow: scroll; 
 }
 
-#overflow div:nth-of-type(4) {
+.overflow-section div:nth-of-type(4) {
     overflow: auto;  
 }
-.link ul {
+.menu {
     margin: 20px;
     padding: 0;
     list-style: none;   
 }
-.link li {
+.menu > li {
     display: inline-block;
 }
-.link a {
+.menu > li > a {
     display: block;
     padding: 10px 20px;
     background-color: rgb(106, 27, 154);
     color: white;
     text-decoration: none;
 }
-.link a:hover {
-    background-color: rgb(150, 80, 190);
-}
 
-/* Приховуємо третій пункт меню («Послуги»).
-   display: none повністю прибирає елемент із відображення і з потоку документа:
-   він не займає місця (сусідні пункти зсуваються), не реагує на мишу та клавіатуру
-   і не читається екранними зчитувачами.
-   Інші способи приховування поводяться інакше:
-   - visibility: hidden – елемент невидимий, але місце під нього залишається;
-   - opacity: 0 – елемент прозорий, але займає місце й далі натискається;
-   - position: absolute з великим зміщенням – елемент лише виноситься за екран. */
-.link li:nth-of-type(3) {
+/* display: none повністю прибирає елемент із відображення і з потоку документа
+   visibility: hidden – елемент невидимий, але місце під нього залишається;
+   opacity: 0 – елемент прозорий, але займає місце й далі натискається;
+   position: absolute з великим зміщенням – елемент лише виноситься за екран. */
+.menu-item-hidden {
     display: none;
 }

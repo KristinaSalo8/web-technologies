@@ -1,45 +1,42 @@
-table {
+table{
     width: 900px;
     border-collapse: collapse;
     font-family: "Times New Roman", Times, serif;
     text-align: center;
 }
-tr {
+tr{
     height: 80px;
 }
 th, td {
     border: 2px solid white;
 }
-
-thead th {
+thead th{
     border: none;
     border-bottom: 2px solid white;
-    background-color: rgb(241, 220, 219);
-    font-size: 24px;
+    background-color: rgb(219, 232, 245);
+    font-size: 18px;
     font-weight: 700;
     letter-spacing: 1px;
     color: white;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
-    width: 170px;
-}
-thead th:first-child {
-    font-size: 18px;
     width: 220px;
 }
-thead th + th {
-    background-color: rgb(230, 184, 183);
+thead th + th{
+    background-color: rgb(179, 207, 235);
+    font-size: 24px;
+    width: 170px;
 }
-thead th + th + th {
-    background-color: rgb(214, 150, 149);
+thead th + th + th{
+    background-color: rgb(130, 170, 215);
 }
 thead th + th + th + th {
-    background-color: rgb(148, 54, 52);
+    background-color: rgb(32, 70, 128);
 }
-thead th + th + th + th + th {
-    background-color: rgb(99, 36, 35);
+thead th + th + th + th + th{
+    background-color: rgb(18, 40, 82);
 }
-tbody th {
-    background-color: rgb(192, 80, 77);
+tbody th{
+    background-color: rgb(52, 113, 181);
     color: white;
     font-size: 28px;
     font-weight: 400;
@@ -47,10 +44,10 @@ tbody th {
 tbody {
     background: repeating-linear-gradient(
         to bottom,
-        rgb(230, 184, 183) 0,
-        rgb(230, 184, 183) 80px,
-        rgb(241, 220, 219) 80px,
-        rgb(241, 220, 219) 160px
+        rgb(179, 207, 235) 0,
+        rgb(179, 207, 235) 80px,
+        rgb(219, 232, 245) 80px,
+        rgb(219, 232, 245) 160px
     );
 }
 tbody td {

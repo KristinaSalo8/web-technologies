@@ -1,0 +1,54 @@
+.block {
+    border: 5px solid red;
+    max-width: 800px;
+    margin: 0px auto;
+    height: 800px;
+    position: relative;
+}
+
+.block div {
+    height: 300px;
+    width: 200px;
+    line-height: 50px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: black;
+    border: 1px solid black;
+}
+
+.block-1 {
+    background-color: rgb(1, 189, 70);
+    position: absolute;
+    left: 20px;
+    top: 50px;
+    z-index: 1;
+}
+
+.block-2 {
+    background-color: rgb(18, 173, 220);
+    position: absolute;
+    left: 440px;
+    top: 50px;
+    z-index: 2;
+}
+
+.block-3 {
+    background-color: rgb(183, 43, 226);
+    position: absolute;
+    left: 230px;
+    top: 50px;
+    z-index: 3;
+}
+.block-2,.block-3 {
+    opacity: 0;
+}
+
+.block-1:hover + .block-2,
+.block-2:hover,
+.block-2:hover + .block-3,
+.block-3:hover {
+    opacity: 1;
+}

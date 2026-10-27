@@ -1,40 +1,36 @@
-.container {
+.container{
     background-color: rgb(255, 165, 0);
     width: 500px;
     padding: 20px;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
-.title {
+.title{
     font-size: 25px;
     font-weight: 900;
-    margin-bottom: 10px;
+    margin: 0 0 10px;
 }
-ul {
+.list, .sublist{
     list-style-type: none;
     list-style-position: inside;
+    margin: 0;
+    padding: 0;
 }
-li {
+.list-item, .sublist-item{
     background-image: url('/01/icon/rule.png');
     background-position: 5px 5px;
     background-repeat: no-repeat;
     background-size: 35px 35px;
 }
-.list {
+.list-item{
     background-color: rgb(103, 158, 128);
     padding-right: 20px;
     padding-left: 50px;
 }
-.list > li {
-    margin-left: -50px;
-    padding-right: 20px;
-    padding-left: 50px;
+.list-item + .list-item{
+    margin-top: 5px;
 }
-.items {
-    padding: 0;
-    margin-top: 10px;
-}
-.items > li {
+.sublist-item{
     font-size: 18px;
     font-style: italic;
     background-color: rgb(153, 180, 102);
@@ -43,41 +39,46 @@ li {
     margin-bottom: 10px;
     padding-left: 40px;
 }
-span {
+span{
     padding: 10px 20px;
     display: inline-block;
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: top;
 }
-.list > li > span {
+.list-item > span{
     font-size: 20px;
     font-weight: 700;
     background-color: rgb(199, 124, 106);
     margin-bottom: 10px;
-    margin-left: 0;
 }
-.items span {
+.sublist-item > span{
     background-color: rgb(218, 106, 32);
 }
-.route {
+.icon-route{
     background-image: url('/01/icon/ad_units.png');
 }
-.plane {
+.icon-plane{
     background-image: url('/01/icon/airplane_ticket.png');
 }
-.hotel {
+.icon-hotel{
     background-image: url('/01/icon/hotel.png');
 }
-.car {
+.icon-car{
     background-image: url('/01/icon/car_rental.png');
 }
-.bar {
+.icon-bar{
     background-image: url('/01/icon/local_bar.png');
 }
-.casino {
+.icon-casino{
     background-image: url('/01/icon/casino.png');
 }
-.museum {
+.icon-museum{
     background-image: url('/01/icon/museum.png');
 }
-.festival {
+.icon-festival{
     background-image: url('/01/icon/festival.png');
 }
