@@ -1,6 +1,7 @@
 .block {
-    border: 5px solid red;
     max-width: 800px;
+    align-items: center;
+    justify-content: center;
     margin: 0px auto;
     height: 800px;
     position: relative;
