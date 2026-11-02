@@ -1,0 +1,83 @@
+/* ==========================================================
+   reset.css — скидання стилів браузера
+   Підключається ПЕРЕД style.css
+   ========================================================== */
+
+/* 1. Єдина модель розрахунку розмірів: padding і border входять у width/height */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Прибираємо стандартні відступи, які додає браузер */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Запобігаємо автозбільшенню тексту на мобільних (iOS) */
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+/* 4. Базові налаштування body */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Списки без маркерів (стилізуємо самі) */
+ul,
+ol {
+  list-style: none;
+}
+
+/* 6. Медіа-елементи: блочні, не виходять за контейнер */
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* 7. Форми успадковують шрифт сторінки */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+/* 8. Заголовки й текст: не нав'язуємо розмір/жирність браузера */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* 9. Посилання та жирний/курсив — без «сюрпризів» */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+b,
+strong {
+  font-weight: inherit;
+}
+
+/* 10. Прибираємо проміжки між клітинками таблиць */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
