@@ -1,6 +1,5 @@
 :root {
   --font-main: "Roboto", Arial, sans-serif;
-
   --color-text-dark: #444;
   --color-text: #666;
   --color-muted: #888;
@@ -31,19 +30,19 @@ b {
   padding: var(--space-lg) var(--space-md);
 }
 
-.current__city {
+.current-city {
   font-size: 48px;
   font-weight: 300;
   color: var(--color-text-dark);
   line-height: 1.1;
 }
 
-.current__date,
-.current__condition {
+.current-date,
+.current-condition {
   font-size: 16px;
 }
 
-.current__main {
+.current-info {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -51,30 +50,30 @@ b {
   margin-bottom: var(--space-lg);
 }
 
-.current__temp {
+.current-temp {
   display: flex;
   align-items: center;
   margin: var(--space-sm) var(--space-md) var(--space-sm) 0;
 }
 
-.current__icon {
+.current-icon {
   width: var(--icon-size);
   height: var(--icon-size);
   margin-right: var(--space-sm);
 }
 
-.current__value {
+.current-value {
   font-size: 48px;
   color: var(--color-text-dark);
 }
 
-.current__unit {
+.current-unit {
   align-self: flex-start;
   margin-top: var(--space-sm);
   font-size: 16px;
 }
 
-.current__details {
+.current-details {
   margin: var(--space-sm) 0;
   font-size: 16px;
   line-height: 1.5;
@@ -96,21 +95,21 @@ b {
   border-bottom: 1px solid var(--color-border);
 }
 
-.day__name {
+.day-name {
   flex: 3;
   font-size: 17px;
   font-weight: 700;
   color: var(--color-text-dark);
 }
 
-.day__icon {
+.day-icon {
   flex: 0 0 var(--icon-size);
   width: var(--icon-size);
   height: var(--icon-size);
   margin: 0 var(--space-sm);
 }
 
-.day__temp {
+.day-temp {
   flex: 2;
   display: flex;
   flex-direction: column;
@@ -118,15 +117,15 @@ b {
   font-size: 18px;
 }
 
-.day__high {
+.day-high {
   color: var(--color-text-dark);
 }
 
-.day__low {
+.day-low {
   color: var(--color-muted);
 }
 
-.day__pollen {
+.day-pollen {
   flex: 3;
   font-size: 17px;
   color: var(--color-muted);

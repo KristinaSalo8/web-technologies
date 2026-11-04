@@ -13,18 +13,16 @@
 <body>
   <main class="weather">
     <header class="current">
-      <h1 class="current__city">New York, NY</h1>
-      <p class="current__date">Tuesday, April 15th</p>
-      <p class="current__condition">Overcast</p>
-
-      <div class="current__main">
-        <div class="current__temp">
-          <img class="current__icon" src="icons/iconfinder_weather04.png" alt="Overcast" width="96" height="96">
-          <span class="current__value">58</span>
-          <span class="current__unit">°F</span>
+      <h1 class="current-city">New York, NY</h1>
+      <p class="current-date">Tuesday, April 15th</p>
+      <p class="current-condition">Overcast</p>
+      <div class="current-info">
+        <div class="current-temp">
+          <img class="current-icon" src="icons/iconfinder_weather04.png" alt="Overcast">
+          <span class="current-value">58</span>
+          <span class="current-unit">°F</span>
         </div>
-
-        <ul class="current__details">
+        <ul class="current-details">
           <li>Precipitation: <b>100%</b></li>
           <li>Humidity: <b>97%</b></li>
           <li>Wind: <b>4 mph SW</b></li>
@@ -32,49 +30,54 @@
         </ul>
       </div>
     </header>
-
     <ul class="forecast">
       <li class="day">
-        <span class="day__name">Today</span>
-        <img class="day__icon" src="icons/thunderstorm.png" alt="Thunderstorm" width="80" height="80">
-        <span class="day__temp"><span class="day__high">68°</span><span class="day__low">36°</span></span>
-        <span class="day__pollen">Pollen <b>36</b></span>
+        <span class="day-name">Today</span>
+        <img class="day-icon" src="icons/iconfinder_weather07.png" alt="Thunderstorm">
+        <span class="day-temp"><span class="day-high">68°</span><span class="day-low">36°</span></span>
+        <span class="day-pollen">Pollen <b>36</b></span>
       </li>
       <li class="day">
-        <span class="day__name">Wednesday</span>
-        <img class="day__icon" src="icons/sun-cloud.png" alt="Sun and cloud" width="80" height="80">
-        <span class="day__temp"><span class="day__high">50°</span><span class="day__low">39°</span></span>
-        <span class="day__pollen">Pollen <b>36</b></span>
+        <span class="day-name">Wednesday</span>
+        <img class="day-icon" src="icons/iconfinder_weather02.png" alt="Sun and cloud">
+        <span class="day-temp"><span class="day-high">50°</span><span class="day-low">39°</span></span>
+        <span class="day-pollen">Pollen <b>36</b></span>
       </li>
       <li class="day">
-        <span class="day__name">Thursday</span>
-        <img class="day__icon" src="icons/sun-cloud.png" alt="Sun and cloud" width="80" height="80">
-        <span class="day__temp"><span class="day__high">55°</span><span class="day__low">39°</span></span>
-        <span class="day__pollen">Pollen <b>36</b></span>
+        <span class="day-name">Thursday</span>
+        <img class="day-icon" src="icons/iconfinder_weather03.png" alt="Sun and cloud">
+        <span class="day-temp"><span class="day-high">55°</span><span class="day-low">39°</span></span>
+        <span class="day-pollen">Pollen <b>36</b></span>
       </li>
       <li class="day">
-        <span class="day__name">Friday</span>
-        <img class="day__icon" src="icons/mostly-cloudy.png" alt="Mostly cloudy" width="80" height="80">
-        <span class="day__temp"><span class="day__high">54°</span><span class="day__low">43°</span></span>
-        <span class="day__pollen">Pollen <b>36</b></span>
+        <span class="day-name">Friday</span>
+        <img class="day-icon" src="icons/iconfinder_weather04.png" alt="Mostly cloudy">
+        <span class="day-temp"><span class="day-high">54°</span><span class="day-low">43°</span></span>
+        <span class="day-pollen">Pollen <b>36</b></span>
       </li>
       <li class="day">
-        <span class="day__name">Saturday</span>
-        <img class="day__icon" src="icons/rain.png" alt="Rain" width="80" height="80">
-        <span class="day__temp"><span class="day__high">64°</span><span class="day__low">46°</span></span>
-        <span class="day__pollen">Pollen <b>36</b></span>
+        <span class="day-name">Saturday</span>
+        <img class="day-icon" src="icons/iconfinder_weather05.png" alt="Rain">
+        <span class="day-temp"><span class="day-high">64°</span><span class="day-low">46°</span></span>
+        <span class="day-pollen">Pollen <b>36</b></span>
       </li>
       <li class="day">
-        <span class="day__name">Sunday</span>
-        <img class="day__icon" src="icons/rain-light.png" alt="Rain" width="80" height="80">
-        <span class="day__temp"><span class="day__high">64°</span><span class="day__low">50°</span></span>
-        <span class="day__pollen">Pollen <b>36</b></span>
+        <span class="day-name">Sunday</span>
+        <img class="day-icon" src="icons/iconfinder_weather06.png" alt="Rain">
+        <span class="day-temp"><span class="day-high">64°</span><span class="day-low">50°</span></span>
+        <span class="day-pollen">Pollen <b>36</b></span>
       </li>
       <li class="day">
-        <span class="day__name">Monday</span>
-        <img class="day__icon" src="icons/mostly-cloudy.png" alt="Mostly cloudy" width="80" height="80">
-        <span class="day__temp"><span class="day__high">61°</span><span class="day__low">50°</span></span>
-        <span class="day__pollen">Pollen <b>36</b></span>
+        <span class="day-name">Monday</span>
+        <img class="day-icon" src="icons/iconfinder_weather07.png" alt="Thunderstorm">
+        <span class="day-temp"><span class="day-high">68°</span><span class="day-low">36°</span></span>
+        <span class="day-pollen">Pollen <b>36</b></span>
+      </li>
+      <li class="day">
+        <span class="day-name">Monday</span>
+        <img class="day-icon" src="icons/iconfinder_weather07.png" alt="Thunderstorm">
+        <span class="day-temp"><span class="day-high">68°</span><span class="day-low">36°</span></span>
+        <span class="day-pollen">Pollen <b>36</b></span>
       </li>
     </ul>
   </main>
