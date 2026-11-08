@@ -64,8 +64,6 @@ a {
   border-right: 0;
 }
 
-/*Flexbox Starts Here*/
-
 .cover {
   display:flex;
   justify-content:center;
