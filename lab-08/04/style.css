@@ -31,12 +31,6 @@ body {
   padding: var(--page-padding);
 }
 
-.page__title {
-  margin-bottom: var(--gap);
-  font-size: 1.75rem;
-  text-align: center;
-}
-
 .cards {
   display: grid;
   gap: var(--gap);
@@ -94,7 +88,6 @@ body {
   width: 100%;
   aspect-ratio: 16 / 10;
   margin-bottom: 0.9em;
-  background-color: var(--color-diagram);
 }
 
 .card-footer {

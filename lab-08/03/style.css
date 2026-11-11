@@ -56,7 +56,7 @@ body {
     grid-row: 2;
     grid-column: 5; 
 }
-.gallery__item--6,.gallery__item--7,.gallery__item--8,.gallery__item--9,.gallery__item--10 {
+.gallery-item6,.gallery-item7,.gallery-item8,.gallery-item9,.gallery-item10 {
   grid-row: 3;
 }
 
