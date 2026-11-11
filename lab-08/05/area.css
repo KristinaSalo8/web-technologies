@@ -1,0 +1,90 @@
+:root {
+  --gap: 20px;
+  --page-padding: 20px;
+  --block-padding: 12px;
+  --block-radius: 4px;
+  --block-border: 2px solid #383bff;
+  --color-block: #ffffff;
+  --color-text: #000000;
+  --font-main: Arial, Helvetica, sans-serif;
+  --col-side: 1fr;
+  --col-main: 3fr;
+}
+
+body {
+  background-image: url("./images/topography.svg"),
+    linear-gradient(110deg, #f93d66, #6d47d9);
+  background-attachment: fixed;
+  font-family: var(--font-main);
+  font-size: 0.875rem;
+  color: var(--color-text);
+}
+
+.layout > * {
+  padding: var(--block-padding);
+  background-color: var(--color-block);
+  border: var(--block-border);
+  border-radius: var(--block-radius);
+}
+
+.layout {
+  display: grid;
+  gap: var(--gap);
+  padding: var(--page-padding);
+  grid-template-areas:
+    "header"
+    "navigation"
+    "main"
+    "sidebar"
+    "ads"
+    "footer";
+}
+
+.layout-header {
+  grid-area: header;
+}
+
+.layout-navigation {
+  grid-area: navigation;
+}
+
+.layout-main {
+  grid-area: main;
+  min-height: 250px;
+}
+
+.layout-sidebar {
+  grid-area: sidebar;
+}
+
+.layout-ads {
+  grid-area: ads;
+}
+
+.layout-footer {
+  grid-area: footer;
+}
+
+@media (min-width: 768px) {
+  .layout {
+    grid-template-columns: var(--col-side) var(--col-main);
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas:
+      "header     header"
+      "navigation navigation"
+      "sidebar    main"
+      "ads        footer";
+    min-height: 100vh;
+  }
+}
+
+@media (min-width: 1024px) {
+  .layout {
+    grid-template-columns: var(--col-side) var(--col-main) var(--col-side);
+    grid-template-areas:
+      "header  header     header"
+      "sidebar navigation ads"
+      "sidebar main       ads"
+      "footer  footer     footer";
+  }
+}

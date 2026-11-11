@@ -1,0 +1,66 @@
+:root {
+  --columns: 12;
+  --gap: 10px;
+  --row-height: 90px;
+  --page-padding: 10px;
+  --span: 1;
+  --color-block: #ff9b43;
+  --color-number: #ffffff;
+  --font-main: "Times New Roman", Times, serif;
+  --font-size-number: 2.5rem;
+}
+
+body {
+  background-image: url("./images/topography.svg"),
+    linear-gradient(110deg, #f93d66, #6d47d9);
+  background-attachment: fixed;
+  font-family: var(--font-main);
+}
+
+.page {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: var(--page-padding);
+}
+
+.tree {
+  display: grid;
+  gap: var(--gap);
+  grid-template-columns: repeat(var(--columns), 1fr);
+  grid-auto-rows: var(--row-height);
+  counter-reset: block;
+}
+
+.tree-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: span var(--span);
+  background-color: var(--color-block);
+  counter-increment: block;
+}
+
+.tree-item::before {
+  content: counter(block);
+  font-size: var(--font-size-number);
+  color: var(--color-number);
+}
+
+.level1{
+    grid-column: span 12;
+}
+.level2{
+    grid-column: span 6;
+}
+.level3{
+    grid-column: span 4;
+}
+.level4{
+    grid-column: span 3;
+}
+.level5{
+    grid-column: span 2;
+}
+.level6{
+    grid-column: span 1;
+}

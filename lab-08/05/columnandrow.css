@@ -1,0 +1,100 @@
+:root {
+  --gap: 20px;
+  --page-padding: 20px;
+  --block-padding: 12px;
+  --block-radius: 4px;
+  --block-border: 2px solid #7027dd;
+  --color-block: #ffffff;
+  --color-text: #000000;
+  --font-main: Arial, Helvetica, sans-serif;
+  --col-side: 1fr;
+  --col-main: 3fr;
+}
+
+body {
+  background-image: url("./images/topography.svg"),
+    linear-gradient(110deg, #f93d66, #6d47d9);
+  background-attachment: fixed;
+  font-family: var(--font-main);
+  font-size: 0.875rem;
+  color: var(--color-text);
+}
+
+.layout {
+  display: grid;
+  gap: var(--gap);
+  padding: var(--page-padding);
+}
+
+.layout > * {
+  padding: var(--block-padding);
+  background-color: var(--color-block);
+  border: var(--block-border);
+  border-radius: var(--block-radius);
+}
+
+.layout-main {
+  min-height: 250px;
+}
+
+@media (min-width: 768px) {
+  .layout {
+    grid-template-columns: var(--col-side) var(--col-main);
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100vh;
+  }
+  .layout-header {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+  .layout-navigation {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+  .layout-sidebar {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .layout-main {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  .layout-ads {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  .layout-footer {
+    grid-column: 2;
+    grid-row: 4;
+  }
+}
+
+@media (min-width: 1024px) {
+  .layout {
+    grid-template-columns: var(--col-side) var(--col-main) var(--col-side);
+  }
+  .layout-header {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+  .layout-sidebar {
+    grid-column: 1;
+    grid-row: 2 / span 2;
+  }
+  .layout-navigation {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .layout-main {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  .layout-ads {
+    grid-column: 3;
+    grid-row: 2 / span 2;
+  }
+  .layout-footer {
+    grid-column: 1 / -1;
+    grid-row: 4;
+  }
+}
